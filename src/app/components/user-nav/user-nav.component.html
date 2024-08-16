@@ -1,0 +1,8 @@
+<nav class="nav">
+    @for (r of rutas; track $index) {
+        <a [routerLink]="'/'+r.path" class="link">
+            <mat-icon [fontIcon]="getIcon(r.path)"></mat-icon>
+            <span>{{r.title}}</span>
+        </a>
+    }
+</nav>

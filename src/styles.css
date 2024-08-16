@@ -1,0 +1,66 @@
+:root{
+    --mainColor: #4169E1;
+
+    --textColor: #ddd;
+    --textLightColor: #888;
+    --textLightColorAlpha: #8883;
+    --bgColor: #111;
+    --bgCardColor: #222;
+
+    --headerHeight: 60px;
+
+    --borderrLow: .2rem;
+    --borderrMid: .5rem;
+    --borderrHigh: 1rem;
+
+    --maxWidth: 1200px;
+}
+
+
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+html,body{
+    background: var(--bgColor);
+    color: var(--textLightColor);
+}
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+    line-height: 1;
+    color: var(--textColor);
+}
+p{
+    margin: 0;
+    line-height: 1.5;
+}
+mat-icon.mat-icon{
+    color: var(--textLightColor);
+}
+
+
+.box-shadow{
+    box-shadow: 0 0 5px 0 var(--textLightColorAlpha);
+}
+.container{
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: var(--maxWidth);
+}
+.cursor{
+    cursor: default;
+}
+.title{
+    color: var(--textColor);
+}
+
+
+@media screen and (min-width: 500px) {
+    .cursor{
+        cursor: pointer;
+    }
+}

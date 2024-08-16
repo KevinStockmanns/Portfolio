@@ -1,0 +1,26 @@
+.container{
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+    align-items: start;
+}
+main{
+    padding: 1rem;
+    border-radius: var(--borderrMid);
+    background-color: var(--bgCardColor);
+}
+
+
+
+@media screen and (min-width:800px) {
+    .container{
+        grid-template-columns: 350px 1fr max-content;
+        grid-auto-flow: dense;
+    }
+    .container > main{
+        grid-column: 2 / 3;
+    }
+    .container user-nav{
+        grid-column: 3 / 4;
+    }
+}
