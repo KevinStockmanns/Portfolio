@@ -18,6 +18,14 @@ export const routes: Routes = [
             path: 'resume',
             title: 'Resúmen',
             loadComponent: ()=> import('./pages/resume/resume.component').then(el=>el.ResumeComponent)
+        },{
+            path: 'portfolio',
+            title: 'Portafolio',
+            loadComponent: ()=>import('./pages/portfolio-page/portfolio-page.component').then(el=>el.PortfolioPageComponent)
+        },{
+            path: 'contact',
+            title: 'Contacto',
+            loadComponent: ()=>import('./pages/contact-page/contact-page.component').then(el=>el.ContactPageComponent)
         }]
     }
 ];

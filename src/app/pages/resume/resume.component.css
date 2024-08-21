@@ -1,0 +1,86 @@
+section{
+    display: grid;
+    gap: 2rem;
+}
+section > article{
+    display: grid;
+    gap: 2rem;
+}
+article .header{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.header mat-icon{
+    color: var(--mainColor);
+}
+.education .body{
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 1.5rem;
+}
+.dot{
+    position: relative;
+    margin-top: .5rem;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    justify-self: center;
+    align-self: start;
+    z-index: 10;
+}
+.line{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 3px;
+    height: 0;
+    transform: translateX(-50%);
+    background-color: var(--textLightColor);
+    transition: var(--transitionMid);
+    z-index: 5;
+}
+.education-item{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    font-size: .9rem;
+}
+.education-item .title{
+    font-weight: bold;
+    color: var(--textColor);
+    font-size: 1.1rem;
+}
+.education-item .date{
+    color: var(--mainColor);
+}
+.education-item .institute{
+    font-weight: bold;
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+.skills .body{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.skill{
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 2rem 1fr;
+    grid-auto-rows: 2rem;
+    padding: .5rem;
+    align-items: center;
+    font-weight: bold;
+    border-radius: var(--borderrMid);
+    color: var(--textColor);
+    background-color: var(--bgColor);
+}

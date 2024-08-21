@@ -14,7 +14,9 @@ export class UserNavComponent {
   rutas: Routes;
   icons: Map<string,string> = new Map([
     ['about', 'person'],
-    ['resume', 'description']
+    ['resume', 'description'],
+    ['portfolio', 'work'],
+    ['contact', 'mail']
   ]);
 
   constructor(private router:Router){

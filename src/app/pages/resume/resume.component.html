@@ -1,1 +1,42 @@
-<p>resume works!</p>
+<section>
+    <app-title [title]="title.getTitle()"></app-title>
+    <article class="education">
+        <div class="header">
+            <mat-icon fontIcon="menu_book"></mat-icon>
+            <h2>Educación</h2>
+        </div>
+            <div class="body">
+            @for (e of education; track $index) {
+                <div class="dot" [class.last]="$last" [class.first]="$first">
+                    @if ($first) {
+                        <div class="line" #line></div>
+                    }
+                </div>
+                <div class="education-item">
+                    <span class="title">{{e.title}}</span>
+                    @if (e.page) {
+                        <a class="institute" [href]="e.page" target="_blank" rel="noreferrer">{{e.institute}}</a>
+                    }@else {
+                        <span class="institute">{{e.institute}}</span>
+                    }
+                    <span class="date">{{ e.start ? e.start +' - '+e.end : e.end}}</span>
+                    <span>{{e.overview}}</span>
+                </div>
+            }
+        </div>
+    </article>
+    <article class="skills">
+        <div class="header">
+            <mat-icon fontIcon="military_tech"></mat-icon>
+            <h2>Habilidades y Herramientas</h2>
+        </div>
+        <div class="body">
+            @for (s of skills; track s.id) {
+                <div class="skill">
+                    <img [src]="s.icon" [alt]="'Icono de '+s.name">
+                    <span>{{s.name}}</span>
+                </div>
+            }
+        </div>
+    </article>
+</section>

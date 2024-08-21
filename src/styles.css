@@ -14,11 +14,17 @@
     --borderrHigh: 1rem;
 
     --maxWidth: 1200px;
+
+    --transitionMid : .5s;
 }
 
 
 *,*::after, *::before{
     box-sizing: border-box;
+}
+*::selection{
+    background-color: var(--mainColor);
+    color: var(--textColor);
 }
 html,body{
     background: var(--bgColor);
@@ -32,6 +38,9 @@ h1,h2,h3,h4,h5{
     margin: 0;
     line-height: 1;
     color: var(--textColor);
+}
+img{
+    max-width: 100%;
 }
 p{
     margin: 0;
