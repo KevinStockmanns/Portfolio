@@ -1,0 +1,18 @@
+{
+    "projects": [{
+        "id":1,
+        "title": "Encriptador - ONE",
+        "overview": "Página frontend para encriptar y desencriptar texto, desarrollado en el programa Oracle Next Education en Alura.",
+        "content": "<h2>Descripción del Proyecto</h2><p>Este proyecto fue parte de un ejercicio práctico en el programa de Oracle Next Education, dictado en la plataforma de Alura. El objetivo principal era desarrollar un encriptador utilizando tecnologías frontend como HTML, CSS y JavaScript.</p><p>La tarea inicial consistía en encriptar las vocales de un texto según un criterio específico, lo que me permitió aplicar y reforzar mis conocimientos en manipulación del DOM y lógica básica en JavaScript.</p><h2>Funcionalidades Adicionales</h2><p>Además de la funcionalidad básica de encriptar, decidí extender el proyecto incorporando nuevas características. Implementé un historial donde se almacenan las palabras o frases encriptadas, utilizando la caché del navegador a través de <code>localStorage</code>. Esto permite al usuario ver un registro de todas las encriptaciones realizadas durante la sesión.</p><p>Otra mejora que añadí fue la capacidad de copiar automáticamente el texto encriptado o desencriptado al portapapeles, facilitando así el uso de la herramienta.</p><h2>Conclusión</h2><p>Este proyecto fue una excelente oportunidad para ejercitar mis habilidades en frontend, especialmente considerando que mi enfoque principal en el programa es en desarrollo backend. </p><p>Además, la experiencia me permitió colaborar con otros estudiantes del curso, lo cual fue muy valioso para mejorar mis habilidades de trabajo en equipo y compartir conocimientos.</p>",
+        "images": [],
+        "poster": "images/encriptador/poster.png",
+        "date":"2023-08-14",
+        "page": "https://encriptador-one.netlify.app/",
+        "repository": "https://github.com/KevinStockmanns/Encriptador--Oracle-Next-Education-",
+        "tags": {
+            "tech": [1,2,3],
+            "tags": []
+        },
+        "status": "Finalizado"
+    }]
+}

@@ -1,0 +1,56 @@
+.project{
+    display: grid;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: var(--borderrMid);
+    background-color: var(--bgColor);
+}
+.project:hover img{
+    scale: 1.05;
+    /* mix-blend-mode: normal; */
+}
+.header{
+    position: relative;
+    display: grid;
+    gap: 1rem;
+    overflow: hidden;
+}
+.status{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    padding: .2rem .5rem;
+    border-radius: var(--borderrMid);
+    font-size: .8rem;
+    /* font-weight: bold; */
+    background-color: var(--textLightColor);
+    color: var(--bgColor);
+}
+.status.green{
+    background-color: var(--greenColor);
+}
+.header img{
+    border-radius: var(--borderrMid);
+    max-width: 400px;
+    justify-self: center;
+    height: 12rem;
+    object-fit: cover;
+    background-color: var(--bgCardColorAlpha);
+    mix-blend-mode: soft-light;
+    transition: var(--transitionMid);
+}
+.title{
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.overview{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    line-clamp:  2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3rem;
+}

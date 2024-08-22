@@ -6,6 +6,10 @@
     --textLightColorAlpha: #8883;
     --bgColor: #111;
     --bgCardColor: #222;
+    --bgCardColorAlpha: #2228;
+
+    --greenColor: hsl(151, 64%, 63%);
+    --greenColorAlpha: ;
 
     --headerHeight: 60px;
 
@@ -16,6 +20,7 @@
     --maxWidth: 1200px;
 
     --transitionMid : .5s;
+    --zIndex:1000;
 }
 
 
@@ -41,6 +46,7 @@ h1,h2,h3,h4,h5{
 }
 img{
     max-width: 100%;
+    width: 100%;
 }
 p{
     margin: 0;

@@ -1,1 +1,8 @@
-<p>portfolio-page works!</p>
+<div class="portfolio">
+    <app-title [title]="title.getTitle()"></app-title>
+    <article class="body">
+        @for (p of projects; track $index) {
+            <project-card [project]="p" data-aos="zoom-in"></project-card>
+        }
+    </article>
+</div>
