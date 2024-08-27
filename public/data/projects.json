@@ -3,7 +3,7 @@
         "id":1,
         "title": "Encriptador - ONE",
         "overview": "Página frontend para encriptar y desencriptar texto, desarrollado en el programa Oracle Next Education en Alura.",
-        "content": "<h2>Descripción del Proyecto</h2><p>Este proyecto fue parte de un ejercicio práctico en el programa de Oracle Next Education, dictado en la plataforma de Alura. El objetivo principal era desarrollar un encriptador utilizando tecnologías frontend como HTML, CSS y JavaScript.</p><p>La tarea inicial consistía en encriptar las vocales de un texto según un criterio específico, lo que me permitió aplicar y reforzar mis conocimientos en manipulación del DOM y lógica básica en JavaScript.</p><h2>Funcionalidades Adicionales</h2><p>Además de la funcionalidad básica de encriptar, decidí extender el proyecto incorporando nuevas características. Implementé un historial donde se almacenan las palabras o frases encriptadas, utilizando la caché del navegador a través de <code>localStorage</code>. Esto permite al usuario ver un registro de todas las encriptaciones realizadas durante la sesión.</p><p>Otra mejora que añadí fue la capacidad de copiar automáticamente el texto encriptado o desencriptado al portapapeles, facilitando así el uso de la herramienta.</p><h2>Conclusión</h2><p>Este proyecto fue una excelente oportunidad para ejercitar mis habilidades en frontend, especialmente considerando que mi enfoque principal en el programa es en desarrollo backend. </p><p>Además, la experiencia me permitió colaborar con otros estudiantes del curso, lo cual fue muy valioso para mejorar mis habilidades de trabajo en equipo y compartir conocimientos.</p>",
+        "content": "<h2>Descripción del Proyecto</h2><p>Este proyecto formó parte de un ejercicio práctico en el programa de <a href=\"https://www.oracle.com/ar/education/oracle-next-education/\" target=\"_blank\" rel=\"noreferrer\">Oracle Next Education</a>, impartido en la plataforma de <a href=\"https://www.aluracursos.com/\" target=\"_blank\" rel=\"noreferrer\">Alura</a>. El objetivo principal era desarrollar una <strong>aplicación de encriptación de texto</strong> utilizando tecnologías frontend como <strong>HTML, CSS y JavaScript</strong>. A través de este proyecto, tuve la oportunidad de aplicar y fortalecer mis conocimientos en <strong>manipulación del DOM</strong> y lógica en JavaScript.</p><p>La tarea inicial consistía en implementar un encriptador que transformara las vocales de un texto según un criterio específico. Este desafío me permitió no solo practicar conceptos fundamentales de <strong>programación</strong>, sino también explorar diferentes enfoques para <strong>manipular el texto</strong> y la estructura del DOM de manera eficiente.</p><h2>Funcionalidades Adicionales</h2><p>Más allá de la encriptación básica, decidí expandir el proyecto incorporando funcionalidades que mejoran la experiencia del usuario. Implementé un <strong>historial de encriptaciones</strong>, almacenado en la caché del navegador mediante <code>localStorage</code>. Esto permite al usuario consultar un registro de todas las palabras o frases encriptadas durante la sesión, ofreciendo una forma sencilla de gestionar y revisar el trabajo realizado.</p><p>Otra mejora significativa fue la adición de una funcionalidad para <strong>copiar automáticamente el texto encriptado o desencriptado al portapapeles</strong> con un solo clic. Esta característica no solo agiliza el proceso de uso de la herramienta, sino que también mejora la <strong>usabilidad</strong> general de la aplicación.</p><h2>Conclusión</h2><p>Este proyecto representó una excelente oportunidad para profundizar en mis habilidades de <strong>desarrollo frontend</strong>, especialmente en un contexto donde mi enfoque principal en el programa ha sido el <strong>desarrollo backend</strong>. La creación y mejora de esta herramienta no solo me permitió consolidar mis conocimientos técnicos, sino que también fomentó mi capacidad para implementar soluciones creativas a problemas comunes en el desarrollo web.</p><p>Además, la experiencia me brindó la oportunidad de <strong>colaborar</strong> estrechamente con otros estudiantes del curso. Este intercambio fue invaluable para mejorar mis habilidades de <strong>trabajo en equipo</strong> y me permitió compartir y adquirir conocimientos, lo que enriqueció aún más mi proceso de aprendizaje.</p>",
         "images": [],
         "poster": "images/encriptador/poster.png",
         "date":"2023-08-14",
@@ -11,7 +11,37 @@
         "repository": "https://github.com/KevinStockmanns/Encriptador--Oracle-Next-Education-",
         "tags": {
             "tech": [1,2,3],
-            "tags": []
+            "tags": [1,2]
+        },
+        "status": "Finalizado"
+    },{
+        "id":2,
+        "title": "WeatherApp",
+        "overview": "Aplicación web que utiliza una API pública para ofrecer información detallada del clima en cualquier lugar del mundo, con una interfaz sencilla y fácil de usar.",
+        "content": "",
+        "images": [],
+        "poster": "images/weather-app/poster.png",
+        "date":"2023-08-16",
+        "page": "https://weather-app-kev.netlify.app/",
+        "repository": "https://github.com/KevinStockmanns/weather-app",
+        "tags": {
+            "tech": [1,2,3,8],
+            "tags": [1,2]
+        },
+        "status": "Finalizado"
+    },{
+        "id":3,
+        "title": "Movie Link",
+        "overview": "Plataforma web interactiva que se conecta a una API pública para ofrecer un catálogo de películas con detalles extensos sobre cada título, incluyendo valoraciones",
+        "content": "",
+        "images": [],
+        "poster": "images/movie-link/poster.png",
+        "date":"2023-08-16",
+        "page": "https://movie-link-kev.netlify.app/",
+        "repository": "https://github.com/KevinStockmanns/movie-link",
+        "tags": {
+            "tech": [1,2,3,8],
+            "tags": [1,2]
         },
         "status": "Finalizado"
     }]

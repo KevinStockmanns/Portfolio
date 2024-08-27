@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ErrorPageComponent } from './pages/error-page/error-page.component';
 
 export const routes: Routes = [
     {
@@ -27,5 +28,12 @@ export const routes: Routes = [
             title: 'Contacto',
             loadComponent: ()=>import('./pages/contact-page/contact-page.component').then(el=>el.ContactPageComponent)
         }]
+    },{
+        path:'project/:id',
+        title: 'Proyecto',
+        loadComponent: ()=> import('./pages/project-page/project-page.component').then(el=>el.ProjectPageComponent)
+    },{
+        path: '**',
+        component: ErrorPageComponent
     }
 ];

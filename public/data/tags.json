@@ -1,0 +1,18 @@
+{
+    "tags":[{
+        "id":1,
+        "tag": "Desarrollo Web"
+    },
+    {
+        "id":2,
+        "tag": "FrontEnd"
+    },
+    {
+        "id":3,
+        "tag": "BackEnd"
+    },
+    {
+        "id":4,
+        "tag": "FullStack"
+    }]
+}

@@ -8,6 +8,6 @@
         <p class="overview" [title]="project().overview">{{project().overview}}</p>
     </div>
     <div class="footer">
-        <app-button text="Ver Detalles" icon="info"></app-button>
+        <app-button text="Ver Detalles" icon="info" [link]="'/project/'+project().id"></app-button>
     </div>
 </div>

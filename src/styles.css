@@ -9,7 +9,7 @@
     --bgCardColorAlpha: #2228;
 
     --greenColor: hsl(151, 64%, 63%);
-    --greenColorAlpha: ;
+    --yellowColor: hsl(60, 74%, 63%);
 
     --headerHeight: 60px;
 
@@ -30,6 +30,9 @@
 *::selection{
     background-color: var(--mainColor);
     color: var(--textColor);
+}
+a{
+    text-decoration: none;
 }
 html,body{
     background: var(--bgColor);
