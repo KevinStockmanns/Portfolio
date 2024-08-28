@@ -14,6 +14,7 @@ export interface Project {
     repository: string;
     tags:       Tags;
     status:     string;
+    color:      string|null;
 }
 
 export interface Tags {

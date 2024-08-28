@@ -33,6 +33,8 @@
 }
 a{
     text-decoration: none;
+    text-transform: none;
+    color: var(--mainColor);
 }
 html,body{
     background: var(--bgColor);

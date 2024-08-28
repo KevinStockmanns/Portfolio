@@ -13,7 +13,8 @@
             "tech": [1,2,3],
             "tags": [1,2]
         },
-        "status": "Finalizado"
+        "status": "Finalizado",
+        "color" : "#0a3871"
     },{
         "id":2,
         "title": "WeatherApp",
@@ -28,7 +29,8 @@
             "tech": [1,2,3,8],
             "tags": [1,2]
         },
-        "status": "Finalizado"
+        "status": "Finalizado",
+        "color" : "#0a3871"
     },{
         "id":3,
         "title": "Movie Link",
@@ -43,6 +45,7 @@
             "tech": [1,2,3,8],
             "tags": [1,2]
         },
-        "status": "Finalizado"
+        "status": "Finalizado",
+        "color" : "#8a2be2"
     }]
 }

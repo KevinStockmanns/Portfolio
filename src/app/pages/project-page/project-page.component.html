@@ -1,1 +1,29 @@
-<p>project-page works!</p>
+<section class="project">
+    <div class="header-bg" [ngStyle]="{'background-image': 'url(' + project?.poster + ')'}">
+        <article class="header container">
+            <div class="img-container">
+                <img [src]="project?.poster" alt="Foto del proyecto">
+            </div>
+            <div class="header-text">
+                <h1 class="title">{{project?.title}}</h1>
+                <div class="techs">
+                    @for (t of techs; track t.id) {
+                        <span>{{t.name}}</span>
+                    }
+                </div>
+                <p class="overview">{{project?.overview}}</p>
+                <div class="links">
+                    @if (project?.page) {
+                        <app-button icon="link" text="Visitar Página" [link]="project?.page"></app-button>
+                    }
+                    @if (project?.repository) {
+                        <app-button icon="link" text="Ver Repositorio" [link]="project?.repository"></app-button>
+                    }
+                </div>
+            </div>
+        </article>
+    </div>
+    <article class="body container" [innerHTML]="project?.content">
+        
+    </article>
+</section>
