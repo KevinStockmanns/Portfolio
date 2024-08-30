@@ -1,0 +1,1 @@
+import{ba as n,ib as o,jb as a,rb as c,tb as p}from"./chunk-OXBQCOPE.js";var s=(()=>{class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["app-contact-page"]],standalone:!0,features:[p],decls:2,vars:0,template:function(t,i){t&1&&(o(0,"p"),c(1,"contact-page works!"),a())}})}return e})();export{s as ContactPageComponent};
