@@ -7,7 +7,7 @@
         },{
             "id": 2,
             "name": "CSS",
-            "icon": "/images/icons/css.png"
+            "icon": "/images/icons/css.webp"
         },{
             "id": 3,
             "name": "JavaScript",
@@ -23,7 +23,7 @@
         },{
             "id": 6,
             "name": "GIT",
-            "icon": "/images/icons/git.png"
+            "icon": "/images/icons/git.webp"
         },{
             "id": 7,
             "name": "SpringBoot",
@@ -31,7 +31,7 @@
         },{
             "id": 8,
             "name": "Angular",
-            "icon": "/images/icons/angular.png"
+            "icon": "/images/icons/angular.webp"
         },{
             "id": 9,
             "name": "TypeScript",
