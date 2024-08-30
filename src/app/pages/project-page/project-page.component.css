@@ -1,7 +1,3 @@
-.project{
-    display: grid;
-    gap: 1rem;
-}
 .header-bg{
     width: 100%;
     position: relative;
@@ -12,7 +8,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(1rem);
 }
 .header{
     display: grid;
@@ -37,7 +33,7 @@
     align-self: end;
     justify-self: start;
     display: grid;
-    gap: 1rem;
+    gap: .5rem;
     padding: 1rem;
     border-radius: var(--borderrMid);
     background-color: var(--bgCardColor);
@@ -47,7 +43,8 @@
 }
 .techs{
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: .5rem;
 }
 .links{
     display: grid;

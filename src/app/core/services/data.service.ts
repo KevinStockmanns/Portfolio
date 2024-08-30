@@ -19,23 +19,18 @@ export class DataService {
   getProjects():Observable<Projects>{
     return this.http.get<Projects>('data/projects.json');
   }
-  getProject(id:number):Project|undefined{
-    let projects: Project[] = [];
-    this.getProjects().subscribe({
-      next: res=>{
-        projects = res.projects;
-      }
-    })
-
-    return projects.find(el=>el.id == id);
+  getProject(id:number):Observable<Project|undefined>{
+    return this.getProjects().pipe(
+      map(res => res.projects.find(el => el.id == id))
+    );
   }
 
 
-  getTechs(ids: number[]): Skill[]{
-    let techs: Skill[] = [];
-    this.http.get<Skills>('data/skills.json').subscribe(res=>{
-      ids.forEach(el=> techs.push(res.skills.find(skill=> skill.id == el) as Skill));
-    })
-    return techs;
+  getTechs(ids: number[]): Observable<Skill[]>{
+    return this.getSkills().pipe(
+      map(res => 
+        ids.map(id => res.skills.find(skill => skill.id == id) as Skill)
+      )
+    );
   }
 }

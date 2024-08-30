@@ -19,14 +19,14 @@
         "id":2,
         "title": "WeatherApp",
         "overview": "Aplicación web que utiliza una API pública para ofrecer información detallada del clima en cualquier lugar del mundo, con una interfaz sencilla y fácil de usar.",
-        "content": "",
+        "content": "<h2>Descripción del Proyecto</h2><p> WeatherApp es una aplicación frontend desarrollada con <strong>Angular</strong> y <strong>TypeScript</strong>. El propósito principal de esta aplicación es permitir a los usuarios obtener información básica sobre el clima actual en una ubicación específica. Utiliza la API pública de <a href=\"https://openweathermap.org/\" target=\"_blank\" rel=\"noreferrer\">OpenWeather</a> para obtener datos meteorológicos en tiempo real.</p><p> Los usuarios pueden ingresar una ubicación manualmente a través del teclado o utilizar la función de geolocalización para obtener automáticamente las coordenadas y recibir información precisa del clima actual en su área. Este proyecto me permitió aplicar y fortalecer mis conocimientos en el desarrollo con <strong>Angular</strong>, particularmente en el consumo de APIs y la gestión de datos en tiempo real.</p><h2>Funcionalidades</h2><p>Además de las funcionalidades básicas para consultar el clima, decidí agregar mejoras que optimizan la experiencia del usuario. Por ejemplo, la aplicación permite alternar entre diferentes unidades de medida (Celsius y Fahrenheit) para la temperatura, lo que facilita el uso a un público más amplio. También implementé una función de actualización automática que actualiza los datos meteorológicos a intervalos regulares, asegurando que la información sea siempre precisa y actualizada.</p><h2>Conclusión</h2><p>El desarrollo de WeatherApp representó una excelente oportunidad para profundizar en mis habilidades de <strong>desarrollo frontend</strong> con <strong>Angular</strong>. La integración con la API de OpenWeather y la implementación de funcionalidades como la geolocalización y el almacenamiento en <code>localStorage</code> me permitieron consolidar mis conocimientos en tecnologías modernas de desarrollo web.</p><p>Además, este proyecto me brindó la oportunidad de mejorar mis habilidades en <strong>TypeScript</strong> y de enfrentar desafíos técnicos, como el manejo de datos asincrónicos y la interacción con servicios externos. La experiencia de desarrollar esta aplicación fue altamente enriquecedora y me ha preparado para abordar proyectos más complejos en el futuro.</p>",
         "images": [],
         "poster": "images/weather-app/poster.png",
         "date":"2023-08-16",
         "page": "https://weather-app-kev.netlify.app/",
         "repository": "https://github.com/KevinStockmanns/weather-app",
         "tags": {
-            "tech": [1,2,3,8],
+            "tech": [1,2,9,8],
             "tags": [1,2]
         },
         "status": "Finalizado",
@@ -34,15 +34,15 @@
     },{
         "id":3,
         "title": "Movie Link",
-        "overview": "Plataforma web interactiva que se conecta a una API pública para ofrecer un catálogo de películas con detalles extensos sobre cada título, incluyendo valoraciones",
-        "content": "",
+        "overview": "Plataforma web interactiva que se conecta a una API pública para ofrecer un catálogo de películas con detalles extensos sobre cada título.",
+        "content": "<h2>Descripción del Proyecto</h2><p>Movie Link es una aplicación frontend desarrollada con <strong>Angular</strong> que permite a los usuarios explorar un amplio catálogo de <strong>películas, series, TV shows y actores</strong>. El objetivo principal de la aplicación es ofrecer una experiencia de navegación intuitiva y rica en contenido, donde los usuarios puedan descubrir tanto producciones populares como detalles sobre sus actores favoritos. La aplicación se integra con la API pública de <a href=\"https://developer.themoviedb.org/docs/getting-started\" target=\"_blank\" rel=\"noreferrer\">The Movie Database (TMDb)</a>, permitiendo el acceso a datos actualizados y precisos sobre el mundo del entretenimiento. Además, utiliza herramientas avanzadas de Angular como <strong>ViewTransitions</strong> para mejorar la experiencia de usuario con transiciones suaves entre vistas.</p><p>En la pantalla principal, la aplicación muestra una galería o visualizador de las producciones más destacadas en la parte superior, lo que permite al usuario ver rápidamente el contenido más popular. Además, los usuarios pueden buscar actores, películas o series específicas mediante una barra de búsqueda que procesa queries y devuelve resultados relevantes de manera instantánea.</p><h2>Funcionalidades</h2><p>Movie Link incluye una serie de funcionalidades que mejoran la usabilidad y personalización de la experiencia del usuario:</p><ul><li><strong>Visualizador de contenido:</strong> En el header de la aplicación, los usuarios pueden visualizar una galería con las películas, series y TV shows más populares del momento.</li>  <li><strong>Búsqueda avanzada:</strong> La barra de búsqueda permite a los usuarios buscar por query, encontrando rápidamente actores, películas o series según sus intereses específicos.</li>  <li><strong>Gestión de favoritos:</strong> Los usuarios pueden marcar películas, series o actores como favoritos, y esta información se almacena internamente en <code>localStorage</code>, permitiendo un acceso fácil y rápido a su contenido preferido.</li><li><strong>Transiciones fluidas:</strong> Aprovechando las capacidades de <strong>Angular</strong>, se implementaron <strong>ViewTransitions</strong> que permiten una experiencia de navegación suave y visualmente atractiva, mejorando la interacción del usuario con la aplicación.</li></ul><h2>Conclusión</h2><p>  El desarrollo de Movie Link fue una oportunidad significativa para aplicar y ampliar mis habilidades en <strong>desarrollo frontend</strong> con <strong>Angular</strong>. La integración con la API de <a href=\"https://developer.themoviedb.org/docs/getting-started\" target=\"_blank\" rel=\"noreferrer\">TMDb</a> y la implementación de herramientas como <strong>ViewTransitions</strong>, junto con la gestión de favoritos usando <code>localStorage</code>, me permitió crear una aplicación no solo funcional, sino también enfocada en ofrecer una excelente experiencia de usuario.</p><p>Además, trabajar en este proyecto me brindó la oportunidad de abordar desafíos técnicos relacionados con la búsqueda y presentación de grandes volúmenes de datos, así como de perfeccionar mis habilidades en la creación de interfaces de usuario dinámicas y responsivas. Movie Link es un reflejo de mi compromiso con el desarrollo de aplicaciones web de alta calidad, y me ha preparado para enfrentar proyectos aún más complejos en el futuro.</p>",
         "images": [],
         "poster": "images/movie-link/poster.png",
         "date":"2023-08-16",
         "page": "https://movie-link-kev.netlify.app/",
         "repository": "https://github.com/KevinStockmanns/movie-link",
         "tags": {
-            "tech": [1,2,3,8],
+            "tech": [1,2,9,8],
             "tags": [1,2]
         },
         "status": "Finalizado",

@@ -1,10 +1,10 @@
 <div class="project">
     <div class="header">
         <span class="status" [class.green]="project().status=='Finalizado'">{{project().status}}</span>
-        <img [src]="project().poster" [alt]="'Imagen de '+project().title">
+        <img [style]="'view-transition-name: project-img-'+project().id+';'" [src]="project().poster" [alt]="'Imagen de '+project().title">
         <h2 class="title">{{project().title}}</h2>
     </div>
-    <div class="body">
+    <div class="body" [style]="'view-transition-name: project-header-'+project().id">
         <p class="overview" [title]="project().overview">{{project().overview}}</p>
     </div>
     <div class="footer">

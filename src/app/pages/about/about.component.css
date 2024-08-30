@@ -7,6 +7,12 @@
     /* justify-items: start; */
     gap: 1rem;
 }
+/* .body strong{
+    font-weight: normal;
+} */
+.body em{
+    font-style: normal;
+}
 /* .body > p{
     width: 90%;
     background-color: var(--bgColor);

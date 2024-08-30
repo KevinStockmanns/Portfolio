@@ -32,6 +32,10 @@
             "id": 8,
             "name": "Angular",
             "icon": "/images/icons/angular.png"
+        },{
+            "id": 9,
+            "name": "TypeScript",
+            "icon": "/images/icons/typescript.svg"
         }
     ]
 }

@@ -1,0 +1,11 @@
+.tech{
+    display: grid;
+    grid-template-columns: 1.3rem max-content;
+    align-items: center;
+    gap: .5rem;
+    padding: .3rem .5rem;
+    border-radius: var(--borderrMid);
+    background-color: var(--bgColor);
+    user-select: none;
+    font-weight: bold;
+}

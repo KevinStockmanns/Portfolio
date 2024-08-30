@@ -2,13 +2,13 @@
     <div class="header-bg" [ngStyle]="{'background-image': 'url(' + project?.poster + ')'}">
         <article class="header container">
             <div class="img-container">
-                <img [src]="project?.poster" alt="Foto del proyecto">
+                <img [src]="project?.poster" alt="Foto del proyecto" [style]="'view-transition-name: project-img-'+project?.id+';'">
             </div>
-            <div class="header-text">
+            <div class="header-text" [style]="'view-transition-name: project-header-'+project?.id">
                 <h1 class="title">{{project?.title}}</h1>
                 <div class="techs">
                     @for (t of techs; track t.id) {
-                        <span>{{t.name}}</span>
+                        <tech-item [tech]="t"></tech-item>
                     }
                 </div>
                 <p class="overview">{{project?.overview}}</p>
@@ -17,13 +17,15 @@
                         <app-button icon="link" text="Visitar Página" [link]="project?.page"></app-button>
                     }
                     @if (project?.repository) {
-                        <app-button icon="link" text="Ver Repositorio" [link]="project?.repository"></app-button>
+                        <app-button icon="code" text="Ver Repositorio" [link]="project?.repository"></app-button>
                     }
                 </div>
             </div>
         </article>
     </div>
-    <article class="body container" [innerHTML]="project?.content">
+    <div class="body-container container">
+        <article class="body" [innerHTML]="project?.content">
         
-    </article>
+        </article>
+    </div>
 </section>

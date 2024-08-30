@@ -30,7 +30,7 @@ export class ResumeComponent implements AfterViewInit {
       institute : 'Oracle + Alura',
       end: 'Octubre 2023',
       page : 'https://www.oracle.com/ar/education/oracle-next-education/',
-      overview: 'Curso intensivo enfocado en el desarrollo backend utilizando Java, incluyendo manejo de bases de datos, APIs REST con la libreria SpringBoot'
+      overview: 'Curso intensivo enfocado en el desarrollo backend utilizando Java, incluyendo manejo de bases de datos y APIs REST con la libreria SpringBoot'
     },{
       title: 'Curso de Inglés',
       institute : 'CUI - UBA',
