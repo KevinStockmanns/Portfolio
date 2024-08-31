@@ -13,7 +13,7 @@
             "tech": [1,2,3],
             "tags": [1,2]
         },
-        "status": "Finalizado",
+        "status": "Publicado",
         "color" : "#0a3871"
     },{
         "id":2,
@@ -29,7 +29,7 @@
             "tech": [1,2,9,8],
             "tags": [1,2]
         },
-        "status": "Finalizado",
+        "status": "Publicado",
         "color" : "#0a3871"
     },{
         "id":3,
@@ -45,7 +45,7 @@
             "tech": [1,2,9,8],
             "tags": [1,2]
         },
-        "status": "Finalizado",
+        "status": "Publicado",
         "color" : "#8a2be2"
     },{
         "id": 4,
@@ -58,10 +58,10 @@
         "page": "https://ecommerce-fullstack-kev.netlify.app/",
         "repository": "https://github.com/KevinStockmanns/ecommerce-fullstack",
         "tags": {
-            "tech": [1, 2, 5, 8, 9],
+            "tech": [1, 2, 8, 9, 5, 4, 7],
             "tags": [3, 4]
         },
-        "status": "En desarrollo",
+        "status": "En Desarrollo",
         "color": "#3498db"
     }]
 }

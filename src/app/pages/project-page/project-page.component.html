@@ -6,6 +6,7 @@
             </div>
             <div class="header-text" [style]="'view-transition-name: project-header-'+project?.id">
                 <h1 class="title">{{project?.title}}</h1>
+                <status [status]="project?.status"></status>
                 <div class="techs">
                     @for (t of techs; track t.id) {
                         <tech-item [tech]="t"></tech-item>

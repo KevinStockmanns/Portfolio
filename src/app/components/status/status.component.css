@@ -1,0 +1,16 @@
+:host{
+    position: absolute;
+}
+.status{
+    padding: .2rem .5rem;
+    border-radius: var(--borderrMid);
+    font-size: .8rem;
+    background-color: var(--textLightColor);
+    color: var(--bgColor);
+}
+.status.green{
+    background-color: var(--greenColor);
+}
+.status.yellow{
+    background-color: var(--yellowColor);
+}

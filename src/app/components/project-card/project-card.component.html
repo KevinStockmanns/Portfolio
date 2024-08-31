@@ -1,6 +1,6 @@
 <div class="project">
     <div class="header">
-        <span class="status" [class.green]="project().status=='Finalizado'">{{project().status}}</span>
+        <status [status]="project().status"></status>
         <img [style]="'view-transition-name: project-img-'+project().id+';'" [src]="project().poster" [alt]="'Imagen de '+project().title">
         <h2 class="title">{{project().title}}</h2>
     </div>

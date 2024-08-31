@@ -1,0 +1,6 @@
+<span 
+    class="status" 
+    [class.green]="status()=='Publicado'" 
+    [class.yellow]="status()=='En Desarrollo'"
+    [title]="status()">
+{{status()}}</span>

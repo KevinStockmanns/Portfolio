@@ -6,11 +6,12 @@ import { Skill } from '../../core/models/skill.model';
 import { ButtonComponent } from '../../components/button/button.component';
 import { CommonModule } from '@angular/common';
 import { TechItemComponent } from '../../components/tech-item/tech-item.component';
+import { StatusComponent } from '../../components/status/status.component';
 
 @Component({
   selector: 'app-project-page',
   standalone: true,
-  imports: [ButtonComponent, TechItemComponent, CommonModule],
+  imports: [ButtonComponent, TechItemComponent,StatusComponent ,CommonModule],
   templateUrl: './project-page.component.html',
   styleUrl: './project-page.component.css'
 })
