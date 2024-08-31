@@ -23,12 +23,12 @@ export class AboutComponent implements OnInit {
       { property: 'og:title', content: 'Desarrollador FullStack | Portafolio de Analista de Sistemas' },
       { property: 'og:description', content: 'Soy un desarrollador FullStack con experiencia en la creación de aplicaciones web escalables y eficientes. Especializado en backend, manejo APIs RESTful, bases de datos y más. Desde Argentina, busco oportunidades para crecer profesionalmente.' },
       { property: 'og:type', content: 'website' },
-      // { property: 'og:image', content: 'URL de la imagen de vista previa' },
-      { property: 'og:url', content: 'https://kevin-stockmanns.netlify.app' },
+      { property: 'og:image', content: 'https://kevin-stockmanns.netlify.app/images/meta/profile.png' },
+      { property: 'og:url', content: 'https://kevin-stockmanns.netlify.app/about' },
       // { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Desarrollador FullStack | Portafolio de Analista de Sistemas - Argentina' },
       { name: 'twitter:description', content: 'Soy un desarrollador FullStack con experiencia en la creación de aplicaciones web escalables y eficientes. Especializado en backend, manejo APIs RESTful, bases de datos y más. Desde Argentina, busco oportunidades para crecer profesionalmente.' },
-      // { name: 'twitter:image', content: 'URL de la imagen de vista previa' }
+      { name: 'twitter:image', content: 'https://kevin-stockmanns.netlify.app/images/meta/profile.png' }
       ]);
   }
 }
