@@ -47,5 +47,21 @@
         },
         "status": "Finalizado",
         "color" : "#8a2be2"
+    },{
+        "id": 4,
+        "title": "Ecommerce",
+        "overview": "Plataforma web de ecommerce desarrollada con una arquitectura fullstack utilizando Java Spring Boot para el backend y Angular para el frontend.",
+        "content": "<h2>Descripción del Proyecto</h2><p>Este proyecto de ecommerce fullstack está construido sobre <strong>Java Spring Boot</strong> en el backend y <strong>Angular</strong> en el frontend. La plataforma permite a los usuarios navegar y gestionar productos, realizar pedidos, y administrar cuentas de usuarios con un sistema de roles. El backend actúa como una <strong>API Rest</strong>, gestionando datos críticos como productos, versiones, usuarios y pedidos a través de una base de datos MySQL. Además, se implementa <strong>Spring Security</strong> con autenticación basada en <strong>JSON Web Token (JWT)</strong> para garantizar la integridad y el control de acceso según el rol del usuario. Para la visualización de estadísticas, se ha integrado <strong>GraphQL</strong>, proporcionando un acceso eficiente a la información relevante.</p><p>El frontend está desarrollado con <strong>Angular</strong>, gestionando múltiples rutas para ofrecer una experiencia de navegación fluida y similar a una aplicación nativa. Se emplean <strong>interceptores</strong> para optimizar las consultas a la API, gestionando la caché de manera eficiente y evitando peticiones innecesarias. También se implementa un sistema de manejo de errores para mejorar la experiencia de usuario en caso de fallos en la comunicación con el backend o la interacción con la API.</p><h2>Funcionalidades</h2><p>El proyecto incluye una variedad de funcionalidades enfocadas en ofrecer una experiencia completa tanto para usuarios como para administradores:</p><ul><li><strong>Gestión de productos:</strong> Administración de un catálogo de productos, con versiones y detalles asociados.</li>  <li><strong>Gestión de pedidos:</strong> Los usuarios pueden realizar pedidos, y el sistema permite gestionar su estado.</li>  <li><strong>Seguridad basada en roles:</strong> Autenticación y autorización de usuarios según sus roles, implementada con <strong>JWT</strong> y <strong>Spring Security</strong>.</li>  <li><strong>Visualización de estadísticas:</strong> Utilización de <strong>GraphQL</strong> para la obtención y presentación de estadísticas detalladas sobre productos y ventas.</li></ul><h2>Conclusión</h2><p>El desarrollo de esta plataforma ecommerce fullstack me permitió aplicar conocimientos avanzados en <strong>Java Spring Boot</strong> y <strong>Angular</strong>, así como abordar desafíos relacionados con la gestión de roles, validación de usuarios y el manejo eficiente de grandes volúmenes de datos a través de <strong>GraphQL</strong>. La implementación de interceptores y el manejo de errores en el frontend aseguraron una experiencia de usuario robusta y optimizada.</p>",
+        "images": [],
+        "poster": "images/movie-link/poster.webp",
+        "date": "2024-08-31",
+        "page": "https://ecommerce-fullstack-kev.netlify.app/",
+        "repository": "https://github.com/KevinStockmanns/ecommerce-fullstack",
+        "tags": {
+            "tech": [1, 2, 5, 8, 9],
+            "tags": [3, 4]
+        },
+        "status": "En desarrollo",
+        "color": "#3498db"
     }]
 }
