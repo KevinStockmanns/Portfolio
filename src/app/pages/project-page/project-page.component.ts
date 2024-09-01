@@ -8,7 +8,8 @@ import { CommonModule, LowerCasePipe } from '@angular/common';
 import { TechItemComponent } from '../../components/tech-item/tech-item.component';
 import { StatusComponent } from '../../components/status/status.component';
 import { MatIconModule } from '@angular/material/icon';
-import { Meta } from '@angular/platform-browser';
+import { Meta, MetaDefinition } from '@angular/platform-browser';
+import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-project-page',
@@ -27,33 +28,34 @@ export class ProjectPageComponent implements OnInit {
     private router:Router,
     private metaService: Meta
   ){
-    this.activatedRoute.paramMap.subscribe({
-      next: res=>{
-        if(res.get('id')){
-          this.dataService.getProject(res.get('id') as unknown as number).subscribe({
-            next: pro=>{
-              this.project = pro;
-              if(this.project){
-                this.dataService.getTechs(this.project.tags.tech).subscribe({
-                  next: techs => {
-                    this.techs = techs;
-                  }
-                });
-              }
-            }
-          })
-        }
-      }
-    })
+    
   }
 
   ngOnInit(): void {
-    this.dataService.getMetaTag(this.project?.id as number).subscribe(res=>{
-      this.metaService.addTags(
-        res[0].content.map(el=>{
-          return {name: el.name ? el.name : el.property as string, content: el.content}
-        })
-      )
+    this.activatedRoute.paramMap.pipe(
+      switchMap(params => {
+        const id = params.get('id') as unknown as number;
+        return this.dataService.getProject(id);
+      }),
+      switchMap(pro => {
+        this.project = pro;
+        if (this.project) {
+          this.dataService.getTechs(this.project.tags.tech).subscribe(techs => {
+            this.techs = techs;
+          });
+        }
+        return this.dataService.getMetaTag(this.project?.id as number);
+      })
+    ).subscribe(metaRes => {
+      let metaData: MetaDefinition[] = [];
+      metaRes[0]?.content.forEach(el => {
+        if (el.hasOwnProperty('name')) {
+          metaData.push({ name: el.name as string, content: el.content });
+        } else {
+          metaData.push({ property: el.property as string, content: el.content });
+        }
+      });
+      this.metaService.addTags(metaData);
     });
   }
 }
