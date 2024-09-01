@@ -3,6 +3,8 @@
     position: relative;
     background-color: var(--bgCardColor);
     background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
 }
 .header::before{
     content: '';
