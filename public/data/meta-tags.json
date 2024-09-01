@@ -1,0 +1,200 @@
+{
+    "tags": [
+        {
+            "id": 4,
+            "content": [
+                {
+                    "name": "description",
+                    "content": "Este proyecto de ecommerce fullstack está construido sobre Java Spring Boot en el backend y Angular en el frontend. Ofrece gestión de productos, pedidos, seguridad basada en roles, y visualización de estadísticas utilizando GraphQL."
+                },
+                {
+                    "name": "keywords",
+                    "content": "ecommerce, Java Spring Boot, Angular, API Rest, JWT, Spring Security, GraphQL, desarrollo fullstack, gestión de productos, gestión de pedidos"
+                },
+                {
+                    "name": "author",
+                    "content": "Kevin Stockmanns"
+                },
+                {
+                    "property": "og:title",
+                    "content": "Proyecto Ecommerce Fullstack | Stockmanns Kevin"
+                },
+                {
+                    "property": "og:description",
+                    "content": "Explora mi proyecto de ecommerce fullstack desarrollado con Java Spring Boot y Angular. Incluye funcionalidades como gestión de productos, pedidos, seguridad basada en roles, y más."
+                },
+                {
+                    "property": "og:type",
+                    "content": "website"
+                },
+                {
+                    "property": "og:image",
+                    "content": "https://kevin-stockmanns.netlify.app/images/ecommerce/poster.png"
+                },
+                {
+                    "property": "og:url",
+                    "content": "https://kevin-stockmanns.netlify.app/project/4"
+                },
+                {
+                    "name": "twitter:title",
+                    "content": "Proyecto Ecommerce Fullstack | Stockmanns Kevin"
+                },
+                {
+                    "name": "twitter:description",
+                    "content": "Descubre el proyecto de ecommerce fullstack que he desarrollado con Java Spring Boot y Angular. Gestión de productos, pedidos, seguridad basada en roles, y más."
+                },
+                {
+                    "name": "twitter:image",
+                    "content": "https://kevin-stockmanns.netlify.app/images/ecommerce/poster.png"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "content": [
+                {
+                    "name": "description",
+                    "content": "Movie Link es una aplicación frontend desarrollada con Angular que permite a los usuarios explorar un amplio catálogo de películas, series, TV shows y actores. Integrada con la API pública de The Movie Database (TMDb), ofrece una experiencia rica en contenido y transiciones fluidas entre vistas."
+                },
+                {
+                    "name": "keywords",
+                    "content": "Movie Link, Angular, películas, series, TV shows, actores, API de TMDb, The Movie Database, desarrollo frontend, ViewTransitions, aplicaciones web"
+                },
+                {
+                    "name": "author",
+                    "content": "Kevin Stockmanns"
+                },
+                {
+                    "property": "og:title",
+                    "content": "Movie Link | Explora Películas y Series con Angular"
+                },
+                {
+                    "property": "og:description",
+                    "content": "Descubre Movie Link, una aplicación desarrollada con Angular que te permite explorar un catálogo de películas, series y actores, todo con una experiencia de usuario fluida e integrada con la API de TMDb."
+                },
+                {
+                    "property": "og:type",
+                    "content": "website"
+                },
+                {
+                    "property": "og:image",
+                    "content": "https://kevin-stockmanns.netlify.app/images/movie-link/poster.png"
+                },
+                {
+                    "property": "og:url",
+                    "content": "https://kevin-stockmanns.netlify.app/project/3"
+                },
+                {
+                    "name": "twitter:title",
+                    "content": "Movie Link | Explora Películas y Series con Angular"
+                },
+                {
+                    "name": "twitter:description",
+                    "content": "Explora Movie Link, una aplicación frontend que te permite descubrir películas, series y actores, todo desarrollado con Angular e integrado con la API de TMDb."
+                },
+                {
+                    "name": "twitter:image",
+                    "content": "https://kevin-stockmanns.netlify.app/images/movie-link/poster.png"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "content": [
+                {
+                    "name": "description",
+                    "content": "WeatherApp es una aplicación frontend desarrollada con Angular y TypeScript que permite a los usuarios obtener información del clima en tiempo real para una ubicación específica. Integra la API de OpenWeather para datos precisos y actualizados."
+                },
+                {
+                    "name": "keywords",
+                    "content": "WeatherApp, Angular, TypeScript, API de OpenWeather, clima en tiempo real, geolocalización, desarrollo frontend"
+                },
+                {
+                    "name": "author",
+                    "content": "Kevin Stockmanns"
+                },
+                {
+                    "property": "og:title",
+                    "content": "WeatherApp | Consulta el Clima en Tiempo Real con Angular"
+                },
+                {
+                    "property": "og:description",
+                    "content": "WeatherApp es una aplicación desarrollada con Angular que te permite consultar el clima actual en cualquier ubicación utilizando la API de OpenWeather. Incluye geolocalización y opciones de unidades de temperatura."
+                },
+                {
+                    "property": "og:type",
+                    "content": "website"
+                },
+                {
+                    "property": "og:image",
+                    "content": "https://kevin-stockmanns.netlify.app/images/weather-app/poster.png"
+                },
+                {
+                    "property": "og:url",
+                    "content": "https://kevin-stockmanns.netlify.app/project/2"
+                },
+                {
+                    "name": "twitter:title",
+                    "content": "WeatherApp | Consulta el Clima en Tiempo Real con Angular"
+                },
+                {
+                    "name": "twitter:description",
+                    "content": "Descubre WeatherApp, una aplicación frontend desarrollada con Angular que te permite obtener información del clima en tiempo real en cualquier ubicación."
+                },
+                {
+                    "name": "twitter:image",
+                    "content": "https://kevin-stockmanns.netlify.app/images/weather-app/poster.png"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "content": [
+                {
+                    "name": "description",
+                    "content": "Descubre cómo desarrollé una aplicación de encriptación de texto utilizando HTML, CSS y JavaScript en el marco de un ejercicio práctico en Oracle Next Education. Incluye funcionalidades como historial de encriptaciones y copia al portapapeles."
+                },
+                {
+                    "name": "keywords",
+                    "content": "aplicación de encriptación de texto, Oracle Next Education, Alura, HTML, CSS, JavaScript, desarrollo frontend, manipulación del DOM, encriptación de texto"
+                },
+                {
+                    "name": "author",
+                    "content": "Kevin Stockmanns"
+                },
+                {
+                    "property": "og:title",
+                    "content": "Aplicación de Encriptación de Texto | Proyecto de Oracle Next Education"
+                },
+                {
+                    "property": "og:description",
+                    "content": "Explora esta aplicación de encriptación de texto desarrollada con HTML, CSS y JavaScript como parte de un ejercicio práctico en Oracle Next Education. Incluye funcionalidades adicionales como historial y copia al portapapeles."
+                },
+                {
+                    "property": "og:type",
+                    "content": "website"
+                },
+                {
+                    "property": "og:image",
+                    "content": "https://kevin-stockmanns.netlify.app/images/encriptador/poster.png"
+                },
+                {
+                    "property": "og:url",
+                    "content": "https://kevin-stockmanns.netlify.app/project/1"
+                },
+                {
+                    "name": "twitter:title",
+                    "content": "Aplicación de Encriptación de Texto | Proyecto de Oracle Next Education"
+                },
+                {
+                    "name": "twitter:description",
+                    "content": "Conoce cómo se desarrolló esta aplicación de encriptación de texto usando tecnologías frontend y cómo ofrece funcionalidades mejoradas como historial y copia al portapapeles."
+                },
+                {
+                    "name": "twitter:image",
+                    "content": "https://kevin-stockmanns.netlify.app/images/encriptador/poster.png"
+                }
+            ]
+        }
+    ]
+}

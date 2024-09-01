@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { Skill, Skills } from '../models/skill.model';
 import { Project, Projects } from '../models/project.model';
+import { MetaTags } from '../models/meta-tags.model';
 
 @Injectable({
   providedIn: 'root'
@@ -31,6 +32,12 @@ export class DataService {
       map(res => 
         ids.map(id => res.skills.find(skill => skill.id == id) as Skill)
       )
+    );
+  }
+
+  getMetaTag(id:number){
+    return this.http.get<MetaTags>('data/meta-tags.json').pipe(
+      map(el=> el.tags.filter(meta=>meta.id == id))
     );
   }
 }
