@@ -20,6 +20,17 @@
                     @if (project?.repository) {
                         <app-button icon="code" text="Ver Repositorio" [link]="project?.repository"></app-button>
                     }
+                    @if (!project?.page && !project?.repository) {
+                        <div class="no-link">
+                            <mat-icon fontIcon="info"></mat-icon>
+                            @if (project?.status == 'En Desarrollo') {
+                                <span>Este proyecto se encuentra en desarrollo y no hay repositorio público.</span>
+                            }
+                            @if (project?.status == 'Finalizado' || project?.status == 'Terminado') {
+                                <span>Este proyecto está {{project?.status | lowercase}} pero no tiene enlaces públicos.</span>
+                            }
+                        </div>
+                    }
                 </div>
             </div>
         </article>

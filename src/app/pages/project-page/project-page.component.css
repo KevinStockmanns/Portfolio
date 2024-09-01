@@ -57,7 +57,24 @@
     gap: .5rem;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-
+.no-link{
+    grid-column: 1 / -1;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: .8rem;
+    color: var(--yellowColor);
+}
+.no-link mat-icon{
+    display: grid;
+    color: inherit;
+    font-size: 1rem;
+    /* align-self: center; */
+    /* transform: scale(.8); */
+}
+.no-link mat-icon::before{
+    align-self: center;
+}
 .body{
     display: grid;
     gap: 1rem;
@@ -78,5 +95,8 @@ article.body a, article.body a:visited{
     }
     .links{
         grid-auto-flow: column;
+    }
+    .no-link{
+        gap: 0;
     }
 }

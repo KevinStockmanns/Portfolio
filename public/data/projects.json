@@ -55,11 +55,11 @@
         "images": [],
         "poster": "images/ecommerce/poster.png",
         "date": "2024-08-31",
-        "page": "https://ecommerce-fullstack-kev.netlify.app/",
-        "repository": "https://github.com/KevinStockmanns/ecommerce-fullstack",
+        "page": "",
+        "repository": "",
         "tags": {
             "tech": [1, 2, 8, 9, 5, 4, 7],
-            "tags": [3, 4]
+            "tags": [1, 4,5,6]
         },
         "status": "En Desarrollo",
         "color": "#3498db"

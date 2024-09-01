@@ -14,5 +14,11 @@
     {
         "id":4,
         "tag": "FullStack"
+    },{
+        "id": 5,
+        "tag": "API REST"
+    },{
+        "id": 6,
+        "tag": "GraphQL"
     }]
 }

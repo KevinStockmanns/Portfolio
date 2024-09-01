@@ -4,14 +4,15 @@ import { DataService } from '../../core/services/data.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Skill } from '../../core/models/skill.model';
 import { ButtonComponent } from '../../components/button/button.component';
-import { CommonModule } from '@angular/common';
+import { CommonModule, LowerCasePipe } from '@angular/common';
 import { TechItemComponent } from '../../components/tech-item/tech-item.component';
 import { StatusComponent } from '../../components/status/status.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-project-page',
   standalone: true,
-  imports: [ButtonComponent, TechItemComponent,StatusComponent ,CommonModule],
+  imports: [ButtonComponent, TechItemComponent,StatusComponent, MatIconModule, LowerCasePipe, CommonModule],
   templateUrl: './project-page.component.html',
   styleUrl: './project-page.component.css'
 })
