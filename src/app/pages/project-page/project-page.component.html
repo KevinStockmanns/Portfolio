@@ -1,3 +1,6 @@
+@if (loading()) {
+    <loader [global]="true"></loader>
+}
 <section class="project">
     <div class="header-bg" [ngStyle]="{'background-image': 'url(' + project?.poster + ')'}">
         <article class="header container">

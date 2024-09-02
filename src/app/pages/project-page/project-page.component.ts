@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal, WritableSignal } from '@angular/core';
 import { Project } from '../../core/models/project.model';
 import { DataService } from '../../core/services/data.service';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -10,17 +10,19 @@ import { StatusComponent } from '../../components/status/status.component';
 import { MatIconModule } from '@angular/material/icon';
 import { Meta, MetaDefinition } from '@angular/platform-browser';
 import { switchMap } from 'rxjs';
+import { LoaderComponent } from '../../components/loader/loader.component';
 
 @Component({
   selector: 'app-project-page',
   standalone: true,
-  imports: [ButtonComponent, TechItemComponent,StatusComponent, MatIconModule, LowerCasePipe, CommonModule],
+  imports: [ButtonComponent, TechItemComponent,StatusComponent, MatIconModule, LowerCasePipe, CommonModule, LoaderComponent],
   templateUrl: './project-page.component.html',
   styleUrl: './project-page.component.css'
 })
 export class ProjectPageComponent implements OnInit {
   project:Project|undefined;
   techs: Skill[] = [];
+  loading: WritableSignal<boolean> = signal(true);
 
   constructor(
     private dataService:DataService,
@@ -39,6 +41,7 @@ export class ProjectPageComponent implements OnInit {
       }),
       switchMap(pro => {
         this.project = pro;
+        this.loading.set(false);
         if (this.project) {
           this.dataService.getTechs(this.project.tags.tech).subscribe(techs => {
             this.techs = techs;
