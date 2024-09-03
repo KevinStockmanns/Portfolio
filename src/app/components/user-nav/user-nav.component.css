@@ -4,12 +4,15 @@
     z-index: var(--zIndex);
 }
 nav{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(55px, 80px));
     justify-content: center;
-    gap: 1rem;
+    gap: .5rem;
     padding: 1rem;
+    font-size: .9rem;
     border-radius: var(--borderrMid);
     background-color: var(--bgCardColor);
+    box-shadow: 0px 0px 10px var(--textColorAlpha);
 }
 .link{
     display: flex;
@@ -17,7 +20,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    width: 5rem;
+    /* width: 5rem; */
     height: 5rem;
     border-radius: inherit;
     background-color: var(--bgColor);
@@ -33,5 +36,10 @@ nav{
     nav{
         flex-direction: column;
         justify-content: flex-start;
+        box-shadow: none;
+        gap: 1rem;
+    }
+    .link{
+        font-size: 1rem;
     }
 }

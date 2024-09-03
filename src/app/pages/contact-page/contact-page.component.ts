@@ -16,6 +16,7 @@ import { LoaderComponent } from '../../components/loader/loader.component';
 export class ContactPageComponent {
   form:FormGroup
   loading = false;
+  message = "";
 
   constructor(protected titleService: Title, private formBuilder:FormBuilder,
     private http: HttpClient
@@ -50,15 +51,20 @@ export class ContactPageComponent {
     if(this.form.valid && !this.loading){
       this.loading = true;
       this.http.post('https://formsubmit.co/ajax/stockmannskevin@email.com', {form_data: this.form.value}).subscribe({
-        next: res=>{
+        next: (res:any)=>{
           console.log(res);
           this.loading = false;
+          if(res.succes){
+            this.message = 'Mensaje enviado con éxito.'
+          }else{
+            this.message = 'Ocurrio un error al enviar el mensaje.'
+          }
           
         },
         error: err=>{
           console.log(err);
           this.loading = false;
-          
+          this.message = 'Ocurrio un error al enviar el mensaje.'
         }
       });
     }
