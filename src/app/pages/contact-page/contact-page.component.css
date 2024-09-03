@@ -1,0 +1,67 @@
+.contact{
+    display: grid;
+    gap: 1rem;
+}
+.form{
+    display: grid;
+    gap: 1rem;
+}
+
+.form-div-input{
+    width: 100%;
+    position: relative;
+    border: 2px solid var(--mainColor);
+    border-radius: var(--borderrMid);
+    background: var(--bgCardColor);
+    transition: var(--transitionMid);
+}
+.form-div-input.error{
+    border-color: var(--errorColor);
+}
+.form-div-input input,
+.form-div-input textarea{
+    padding: .3rem .5rem;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: transparent;
+    color: var(--textColor);
+    resize: none;
+}
+.form-div-input textarea{
+    height: 15rem;
+}
+.form-div-input label{
+    position: absolute;
+    top: .3rem;
+    left: .5rem;
+    font-weight: bold;
+    pointer-events: none;
+    transition: var(--transitionMid);
+}
+.form-div-input input:focus ~ label,
+.form-div-input textarea:focus ~ label,
+.form-div-input.hasValue input ~ label,
+.form-div-input.hasValue textarea ~ label{
+    top: -.75rem;
+    left: .8rem;
+    padding: 0 .2rem;
+    background-color: inherit;
+}
+.form-div-input:not(.error) input:focus ~ label,
+.form-div-input:not(.error) textarea:focus ~ label,
+.form-div-input.hasValue:not(.error) input ~ label,
+.form-div-input.hasValue:not(.error) textarea ~ label{
+    color: var(--mainColor);
+
+}
+.form-div-input.error label{
+    color: var(--errorColor);
+}
+.input-error{
+    font-size: .8rem;
+    color: var(--errorColor);
+}

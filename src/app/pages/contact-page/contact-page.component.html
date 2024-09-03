@@ -1,1 +1,63 @@
-<p>contact-page works!</p>
+<section class="contact">
+    <app-title [title]="titleService.getTitle()"></app-title>
+    <form action="" class="form" [formGroup]="form">
+        <div class="form-div">
+            <div class="form-div-input" [class.hasValue]="getValue('name')" [class.error]="hasOneError('name')">
+                <input type="text" name="name" formControlName="name">
+                <label>Nombre Completo</label>
+            </div>
+            @if(hasOneError('name')){
+                @if (hasError('name', 'required')) {
+                    <p class="input-error">El nombre es requerido.</p>
+                }
+            }
+        </div>
+
+        <div class="form-div">
+            <div class="form-div-input" [class.hasValue]="getValue('email')" [class.error]="hasOneError('email')">
+                <input type="email" name="email" formControlName="email">
+                <label>Correo</label>
+            </div>
+            @if(hasOneError('email')){
+                @if (hasError('email', 'required')) {
+                    <p class="input-error">El correo es requerido.</p>
+                }
+                @if (hasError('email', 'email')) {
+                    <p class="input-error">El formato no es válido.</p>
+                }
+            }
+        </div>
+
+        <div class="form-div">
+            <div class="form-div-input" [class.hasValue]="getValue('message')" [class.error]="hasOneError('message')">
+                <textarea name="message" formControlName="message"></textarea>
+                <label>
+                    Mensaje 
+                </label>
+            </div>
+            @if(hasOneError('message')){
+                @if (hasError('message', 'required')) {
+                    <p class="input-error">El mensaje es requerido.</p>
+                }
+                @if (hasError('message', 'minlength')) {
+                    <p class="input-error">El mensaje debe tener al menos {{getError('message', 'minlength').requiredLength}} caracteres.</p>
+                }
+                @if (hasError('message', 'maxlength')) {
+                    <p class="input-error">El mensaje puede tener hasta {{getError('message', 'maxlength').requiredLength}} caracteres.</p>
+                }
+            }
+        </div>
+
+
+        <div class="form-submit" (click)="onSubmit()">
+            @if (loading) {
+                <loader></loader>
+            }@else {
+                <app-button icon="send" text="Enviar"></app-button>
+            }
+        </div>
+
+        
+
+    </form>
+</section>

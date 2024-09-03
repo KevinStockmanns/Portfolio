@@ -8,6 +8,7 @@
     --bgCardColor: #222;
     --bgCardColorAlpha: #2228;
 
+    --errorColor: hsl(0, 84%, 63%);
     --greenColor: hsl(151, 64%, 63%);
     --yellowColor: hsl(60, 44%, 63%);
 
