@@ -34,8 +34,7 @@ nav{
 
 @media screen and (min-width:800px) {
     nav{
-        flex-direction: column;
-        justify-content: flex-start;
+        grid-template-columns: 80px;
         box-shadow: none;
         gap: 1rem;
     }

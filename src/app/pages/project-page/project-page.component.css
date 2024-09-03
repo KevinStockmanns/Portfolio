@@ -36,9 +36,14 @@
     justify-self: start;
     display: grid;
     gap: .5rem;
-    padding: 1rem;
+    padding: 3rem 1rem 1rem;
     border-radius: var(--borderrMid);
     background-color: var(--bgCardColor);
+}
+@media screen and (min-width:450px) {
+    .header-text{
+        padding: 1rem;
+    }
 }
 .header status{
     top: 1rem;
