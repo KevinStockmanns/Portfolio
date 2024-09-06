@@ -39,6 +39,7 @@
     padding: 3rem 1rem 1rem;
     border-radius: var(--borderrMid);
     background-color: var(--bgCardColor);
+    transition: var(--transitionMid);
 }
 @media screen and (min-width:450px) {
     .header-text{

@@ -73,7 +73,7 @@ mat-icon.mat-icon{
     width: 100%;
     max-width: var(--maxWidth);
 }
-.cursor{
+.cursor,a ,button{
     cursor: default;
 }
 .title{
@@ -81,8 +81,8 @@ mat-icon.mat-icon{
 }
 
 
-@media screen and (min-width: 500px) {
-    .cursor{
+@media screen and (min-width: 550px) {
+    .cursor,a,button{
         cursor: pointer;
     }
 }

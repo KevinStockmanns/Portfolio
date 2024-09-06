@@ -1,0 +1,15 @@
+.error-container{
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+}
+.error{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: var(--borderrMid);
+    background-color: var(--bgCardColor);
+}
+h1{
+    font-size: clamp(2rem, 7vw, 3rem);
+}

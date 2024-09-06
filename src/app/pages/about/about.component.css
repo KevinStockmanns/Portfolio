@@ -7,6 +7,10 @@
     /* justify-items: start; */
     gap: 1rem;
 }
+.body > div{
+    display: inherit;
+    gap: inherit;
+}
 /* .body strong{
     font-weight: normal;
 } */
@@ -22,3 +26,26 @@
 .body > p:nth-child(even){
     justify-self: end;
 } */
+ .services{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+ }
+ .service{
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: var(--borderrMid);
+    background-color: var(--bgColor);
+ }
+ .service mat-icon{
+    color: var(--mainColor);
+ }
+ .service-title{
+    font-weight: bold;
+    color: var(--mainColor);
+ }
+ .service-overview{
+    grid-column: 1 / -1;
+ }

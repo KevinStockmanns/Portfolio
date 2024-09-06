@@ -1,17 +1,32 @@
 <section class="about">
     <app-title [title]="title.getTitle()"></app-title>
     <article class="body">
-        <header>
-            <h2>Desarrollador FullStack - Portafolio de Analista de Sistemas</h2>
-        </header>
-    
-        <p><strong>Soy un estudiante avanzado en analista de sistemas</strong> con una inclinación hacia el <em>desarrollo backend</em>. Tengo experiencia en la creación de <strong>aplicaciones web escalables y eficientes</strong>.</p>
-    
-        <p>Desde Argentina, me apasiona enfrentar nuevos desafíos y aprender sobre tecnologías emergentes. Con un enfoque autodidacta, he desarrollado habilidades en la <em>construcción de aplicaciones web robustas</em>, utilizando un conjunto diverso de herramientas y lenguajes que me permiten diseñar <strong>soluciones personalizadas</strong>. Mantenerme al día con las últimas <strong>tendencias en el desarrollo de software</strong> es algo que me motiva constantemente.</p>
-    
-        <p>Mi <strong>experiencia en backend</strong> incluye la participación en proyectos variados, desde pequeñas aplicaciones hasta sistemas más complejos. He trabajado en el diseño y desarrollo de <em>APIs RESTful</em>, implementado <strong>bases de datos</strong>, y optimizado el rendimiento de aplicaciones.</p>
-    
-        <p>Estoy en busca de oportunidades para mejorar mis habilidades y crecer profesionalmente.</p>
+        <div>
+            <header>
+                <h2>Desarrollador FullStack - Portafolio de Analista de Sistemas</h2>
+            </header>
+        
+            <p><strong>Soy un estudiante avanzado en analista de sistemas</strong> con una inclinación hacia el <em>desarrollo backend</em>. Tengo experiencia en la creación de <strong>aplicaciones web escalables y eficientes</strong>.</p>
+        
+            <p>Desde Argentina, me apasiona enfrentar nuevos desafíos y aprender sobre tecnologías emergentes. Con un enfoque autodidacta, he desarrollado habilidades en la <em>construcción de aplicaciones web robustas</em>, utilizando un conjunto diverso de herramientas y lenguajes que me permiten diseñar <strong>soluciones personalizadas</strong>. Mantenerme al día con las últimas <strong>tendencias en el desarrollo de software</strong> es algo que me motiva constantemente.</p>
+        
+            <p>Mi <strong>experiencia en backend</strong> incluye la participación en proyectos variados, desde pequeñas aplicaciones hasta sistemas más complejos. He trabajado en el diseño y desarrollo de <em>APIs RESTful</em>, implementado <strong>bases de datos</strong>, y optimizado el rendimiento de aplicaciones.</p>
+        
+            <p>Estoy en busca de oportunidades para mejorar mis habilidades y crecer profesionalmente.</p>
+        </div>
+
+        <div>
+            <header><h2>Servicios</h2></header>
+            <div class="services">
+                @for (item of services; track $index) {
+                    <div class="service">
+                        <mat-icon [fontIcon]="item.icon"></mat-icon>
+                        <p class="service-title">{{item.title}}</p>
+                        <p class="service-overview">{{item.overview}}</p>
+                    </div>
+                }
+            </div>
+        </div>
     </article>
     
 </section>
