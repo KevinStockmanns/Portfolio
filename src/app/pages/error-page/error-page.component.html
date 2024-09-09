@@ -1,6 +1,8 @@
 <section class="error-container container">
     <article class="error">
+        <mat-icon [fontIcon]="icon"></mat-icon>
         <h1>Ocurrio un error</h1>
-        <p>{{message}} <a routerLink="/">Volver al Inicio.</a></p>
+        <p>{{message}}</p>
+        <app-button link="/" text="VOLVER AL INICIO" icon="home"></app-button>
     </article>
 </section>
