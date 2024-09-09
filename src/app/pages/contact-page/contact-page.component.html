@@ -55,7 +55,7 @@
             }@else {
                 <app-button icon="send" text="Enviar"></app-button>
             }
-            @if(message != ''){
+            @if(message != '' && !loading){
                 <p class="form-message">{{message}}</p>
             }
         </div>

@@ -3,7 +3,7 @@ import { TitleComponent } from '../../components/title/title.component';
 import { Title } from '@angular/platform-browser';
 import { ButtonComponent } from '../../components/button/button.component';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { LoaderComponent } from '../../components/loader/loader.component';
 
 @Component({
@@ -50,21 +50,32 @@ export class ContactPageComponent {
     this.form.markAllAsTouched();
     if(this.form.valid && !this.loading){
       this.loading = true;
-      this.http.post('https://formsubmit.co/ajax/stockmannskevin@email.com', {form_data: this.form.value}).subscribe({
+      let data = {
+        service_id: 'service_f2vlobq',
+        template_id: 'template_fte1frw',
+        user_id: 'GbEI-E6bGHOLtqPqa',
+        template_params: this.form.value
+      };
+      this.http.post(
+        ' https://api.emailjs.com/api/v1.0/email/send',
+        data,
+        {
+          headers: new HttpHeaders({
+            'Content-Type': 'application/json'
+          })
+        }
+      ).subscribe({
         next: (res:any)=>{
-          console.log(res);
           this.loading = false;
-          if(res.succes){
+          this.message = 'Mensaje enviado con éxito.'
+        },
+        error: err=>{
+          if(err.status == 200){
             this.message = 'Mensaje enviado con éxito.'
           }else{
             this.message = 'Ocurrio un error al enviar el mensaje.'
           }
-          
-        },
-        error: err=>{
-          console.log(err);
           this.loading = false;
-          this.message = 'Ocurrio un error al enviar el mensaje.'
         }
       });
     }
