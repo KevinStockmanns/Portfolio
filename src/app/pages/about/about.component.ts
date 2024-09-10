@@ -27,7 +27,7 @@ export class AboutComponent implements OnInit {
     },{
       title: 'Admin. de Base de Datos',
       overview: 'Gestión y optimización de bases de datos, incluyendo la configuración, el mantenimiento, y la seguridad de bases de datos SQL y NoSQL, garantizando un rendimiento óptimo y la integridad de los datos.',
-      icon: 'database'
+      icon: 'lan'
     }
   ]
 
