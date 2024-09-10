@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "HTML",
-            "icon": "/images/icons/html.png"
+            "icon": "/images/icons/html.webp"
         },{
             "id": 2,
             "name": "CSS",
@@ -11,15 +11,15 @@
         },{
             "id": 3,
             "name": "JavaScript",
-            "icon": "/images/icons/javascript.png"
+            "icon": "/images/icons/javascript.webp"
         },{
             "id": 4,
             "name": "Java",
-            "icon": "/images/icons/java.png"
+            "icon": "/images/icons/java.webp"
         },{
             "id": 5,
             "name": "MySQL",
-            "icon": "/images/icons/mysql.png"
+            "icon": "/images/icons/mysql.webp"
         },{
             "id": 6,
             "name": "GIT",
@@ -27,7 +27,7 @@
         },{
             "id": 7,
             "name": "SpringBoot",
-            "icon": "/images/icons/springboot.png"
+            "icon": "/images/icons/springboot.webp"
         },{
             "id": 8,
             "name": "Angular",
@@ -36,6 +36,10 @@
             "id": 9,
             "name": "TypeScript",
             "icon": "/images/icons/typescript.svg"
+        },{
+            "id": 10,
+            "name": "PHP",
+            "icon": "/images/icons/php.webp"
         }
     ]
 }

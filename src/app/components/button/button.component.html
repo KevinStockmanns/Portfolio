@@ -7,12 +7,21 @@
             <span>{{text()}}</span>
         </a>
     }@else {
-        <a class="btn cursor" [href]="link()" target="_blank">
-            @if (icon()!='') {
-                <mat-icon [fontIcon]="icon()"></mat-icon>
-            }
-            <span>{{text()}}</span>
-        </a>
+        @if (isPdf()) {
+            <a class="btn cursor" [href]="link()"  download="cv_stockmanns-kevin.pdf">
+                @if (icon()!='') {
+                    <mat-icon [fontIcon]="icon()"></mat-icon>
+                }
+                <span>{{text()}}</span>
+            </a>
+        }@else {
+            <a class="btn cursor" [href]="link()" target="_blank">
+                @if (icon()!='') {
+                    <mat-icon [fontIcon]="icon()"></mat-icon>
+                }
+                <span>{{text()}}</span>
+            </a>
+        }
     }
 }@else {
     <button class="btn cursor">

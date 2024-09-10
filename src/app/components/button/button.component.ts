@@ -20,4 +20,8 @@ export class ButtonComponent {
   isRouterLink(){
     return !this.link()?.includes('.');
   }
+
+  isPdf(){
+    return this.link()?.includes('.pdf');
+  }
 }
