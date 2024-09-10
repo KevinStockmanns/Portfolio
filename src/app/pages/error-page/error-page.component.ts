@@ -18,6 +18,8 @@ export class ErrorPageComponent {
     if(router.url == '/offline'){
       this.icon = 'wifi_off';
       this.message = 'Parece que no tienes conexión a internet.';
+    }else if(router.url == '/project-error'){
+      this.message = 'Ocurrio un problema al obtener información del proyecto.'
     }
   }
 }

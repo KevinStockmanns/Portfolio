@@ -40,6 +40,10 @@ export class ProjectPageComponent implements OnInit {
         return this.dataService.getProject(id);
       }),
       switchMap(pro => {
+        if(!pro){
+          this.router.navigate(['/project-error']);
+          return [];
+        }
         this.project = pro;
         this.loading.set(false);
         if (this.project) {
